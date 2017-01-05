@@ -36,7 +36,6 @@
     return self.news.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *cellId = [NewsTableViewCell cellIdentifier];
     NewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId

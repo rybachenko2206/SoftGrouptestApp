@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NetworkStatusManager.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.networkManager = [NetworkStatusManager reachabilityWithHostname:@"www.google.com"];
+    [self.networkManager startNotifier];
+    
     return YES;
 }
 
@@ -45,6 +49,19 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+#pragma mark Notification methods
+
+- (void)networkStatusDidChange:(NSNotification *)notification {
+    NetworkStatusManager *netwManager = (NetworkStatusManager *)[notification object];
+    
+    if ([netwManager isReachable]) {
+        NSLog(@"~~Reachable");
+    } else {
+        NSLog(@"~~Not reachable");
+    }
 }
 
 

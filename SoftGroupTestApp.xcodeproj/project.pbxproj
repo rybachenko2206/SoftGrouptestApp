@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B4B32867195559C0638D049 /* Pods_SoftGroupTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687E4EDF4712AD5D01B9D132 /* Pods_SoftGroupTestApp.framework */; };
 		420BA1291E1E64B300C1A649 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 420BA1281E1E64B300C1A649 /* main.m */; };
 		420BA1321E1E64B300C1A649 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 420BA1301E1E64B300C1A649 /* Main.storyboard */; };
 		420BA1341E1E64B400C1A649 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 420BA1331E1E64B400C1A649 /* Assets.xcassets */; };
@@ -15,9 +16,13 @@
 		420BA1491E1E71D000C1A649 /* NewsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420BA1481E1E71D000C1A649 /* NewsListTableViewController.m */; };
 		421295741E1E736C000DFB65 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 421295731E1E736C000DFB65 /* NewsTableViewCell.m */; };
 		421295771E1E7674000DFB65 /* NewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 421295761E1E7674000DFB65 /* NewsItem.m */; };
+		42411A461E1E80C7002510DD /* WebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42411A451E1E80C7002510DD /* WebService.m */; };
+		42411A4C1E1E8144002510DD /* NetworkStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42411A491E1E8144002510DD /* NetworkStatusManager.m */; };
+		42411A4D1E1E8144002510DD /* ResponseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 42411A4B1E1E8144002510DD /* ResponseInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E8FF0BBC43EE37FAF89547E /* Pods-SoftGroupTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftGroupTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoftGroupTestApp/Pods-SoftGroupTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		420BA1241E1E64B300C1A649 /* SoftGroupTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoftGroupTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		420BA1281E1E64B300C1A649 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		420BA1311E1E64B300C1A649 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +37,16 @@
 		421295731E1E736C000DFB65 /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
 		421295751E1E7674000DFB65 /* NewsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsItem.h; sourceTree = "<group>"; };
 		421295761E1E7674000DFB65 /* NewsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsItem.m; sourceTree = "<group>"; };
+		42411A441E1E80C7002510DD /* WebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebService.h; sourceTree = "<group>"; };
+		42411A451E1E80C7002510DD /* WebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebService.m; sourceTree = "<group>"; };
+		42411A481E1E8144002510DD /* NetworkStatusManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkStatusManager.h; sourceTree = "<group>"; };
+		42411A491E1E8144002510DD /* NetworkStatusManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkStatusManager.m; sourceTree = "<group>"; };
+		42411A4A1E1E8144002510DD /* ResponseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseInfo.h; sourceTree = "<group>"; };
+		42411A4B1E1E8144002510DD /* ResponseInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseInfo.m; sourceTree = "<group>"; };
+		42411A4E1E1E81E3002510DD /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		42411A4F1E1E827A002510DD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		687E4EDF4712AD5D01B9D132 /* Pods_SoftGroupTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoftGroupTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4225B6C244E9222AB495016 /* Pods-SoftGroupTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftGroupTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoftGroupTestApp/Pods-SoftGroupTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B4B32867195559C0638D049 /* Pods_SoftGroupTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +66,8 @@
 			children = (
 				420BA1261E1E64B300C1A649 /* SoftGroupTestApp */,
 				420BA1251E1E64B300C1A649 /* Products */,
+				4D4FE347EF5095BC8936F475 /* Pods */,
+				FBFDBF7F14833EB83F3E92D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +104,8 @@
 			children = (
 				420BA13F1E1E656600C1A649 /* AppDelegate.h */,
 				420BA1401E1E656600C1A649 /* AppDelegate.m */,
+				42411A4E1E1E81E3002510DD /* Constants.h */,
+				42411A4F1E1E827A002510DD /* PrefixHeader.pch */,
 				420BA1421E1E656600C1A649 /* Models */,
 				420BA1431E1E656600C1A649 /* Views */,
 				420BA1411E1E656600C1A649 /* Controllers */,
@@ -105,7 +125,7 @@
 		420BA1421E1E656600C1A649 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				421295701E1E72E1000DFB65 /* Managers */,
+				42411A471E1E812D002510DD /* Networking */,
 				421295751E1E7674000DFB65 /* NewsItem.h */,
 				421295761E1E7674000DFB65 /* NewsItem.m */,
 			);
@@ -137,13 +157,6 @@
 			name = Storyboards;
 			sourceTree = "<group>";
 		};
-		421295701E1E72E1000DFB65 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Managers;
-			sourceTree = "<group>";
-		};
 		421295711E1E7337000DFB65 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +166,36 @@
 			name = TableViewCells;
 			sourceTree = "<group>";
 		};
+		42411A471E1E812D002510DD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				42411A441E1E80C7002510DD /* WebService.h */,
+				42411A451E1E80C7002510DD /* WebService.m */,
+				42411A481E1E8144002510DD /* NetworkStatusManager.h */,
+				42411A491E1E8144002510DD /* NetworkStatusManager.m */,
+				42411A4A1E1E8144002510DD /* ResponseInfo.h */,
+				42411A4B1E1E8144002510DD /* ResponseInfo.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		4D4FE347EF5095BC8936F475 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4225B6C244E9222AB495016 /* Pods-SoftGroupTestApp.debug.xcconfig */,
+				0E8FF0BBC43EE37FAF89547E /* Pods-SoftGroupTestApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FBFDBF7F14833EB83F3E92D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				687E4EDF4712AD5D01B9D132 /* Pods_SoftGroupTestApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,9 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 420BA13B1E1E64B400C1A649 /* Build configuration list for PBXNativeTarget "SoftGroupTestApp" */;
 			buildPhases = (
+				FA85A897906E4D8C2C863193 /* [CP] Check Pods Manifest.lock */,
 				420BA1201E1E64B300C1A649 /* Sources */,
 				420BA1211E1E64B300C1A649 /* Frameworks */,
 				420BA1221E1E64B300C1A649 /* Resources */,
+				AB5614AA1A81655185C3477F /* [CP] Embed Pods Frameworks */,
+				35A71E6EA194C85480A3ECDB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,13 +266,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35A71E6EA194C85480A3ECDB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoftGroupTestApp/Pods-SoftGroupTestApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB5614AA1A81655185C3477F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoftGroupTestApp/Pods-SoftGroupTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA85A897906E4D8C2C863193 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		420BA1201E1E64B300C1A649 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42411A461E1E80C7002510DD /* WebService.m in Sources */,
+				42411A4C1E1E8144002510DD /* NetworkStatusManager.m in Sources */,
 				420BA1441E1E656600C1A649 /* AppDelegate.m in Sources */,
 				420BA1491E1E71D000C1A649 /* NewsListTableViewController.m in Sources */,
+				42411A4D1E1E8144002510DD /* ResponseInfo.m in Sources */,
 				421295741E1E736C000DFB65 /* NewsTableViewCell.m in Sources */,
 				421295771E1E7674000DFB65 /* NewsItem.m in Sources */,
 				420BA1291E1E64B300C1A649 /* main.m in Sources */,
@@ -345,9 +442,13 @@
 		};
 		420BA13C1E1E64B400C1A649 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4225B6C244E9222AB495016 /* Pods-SoftGroupTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UHJFHS6M7R;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SoftGroupTestApp/Classes/PrefixHeader.pch";
 				INFOPLIST_FILE = SoftGroupTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rrybachenko.SoftGroupTestApp;
@@ -357,9 +458,13 @@
 		};
 		420BA13D1E1E64B400C1A649 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E8FF0BBC43EE37FAF89547E /* Pods-SoftGroupTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UHJFHS6M7R;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SoftGroupTestApp/Classes/PrefixHeader.pch";
 				INFOPLIST_FILE = SoftGroupTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rrybachenko.SoftGroupTestApp;

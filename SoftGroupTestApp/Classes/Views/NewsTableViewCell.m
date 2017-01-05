@@ -6,6 +6,9 @@
 //  Copyright © 2017 Roman Rybachenko. All rights reserved.
 //
 
+
+#import <SDWebImage/UIImageView+WebCache.h>
+
 #import "NewsTableViewCell.h"
 
 
