@@ -144,8 +144,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="235"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="SpZ-A7-Knv">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="SpZ-A7-Knv">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="235"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="235" id="12S-nb-ibb"/>
+                                                        <constraint firstAttribute="width" constant="375" id="kkf-ln-h21"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#hashtags#label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdC-O7-Ovz">
                                                     <rect key="frame" x="174" y="214" width="195" height="17"/>
