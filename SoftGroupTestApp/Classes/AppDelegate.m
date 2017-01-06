@@ -27,7 +27,7 @@
     self.networkManager = [NetworkStatusManager reachabilityWithHostname:@"www.google.com"];
     [self.networkManager startNotifier];
     
-    [self availableFontsList];
+//    [self availableFontsList];
     
     return YES;
 }
