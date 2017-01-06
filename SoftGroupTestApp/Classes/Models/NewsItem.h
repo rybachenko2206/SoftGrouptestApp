@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSUInteger, Like) {
+    LikeNotSpecified = 0,
+    LikeYes,
+    LikeNo
+};
+
 @interface NewsItem : NSObject
 
 @property (nonatomic, strong) NSString *image;
@@ -16,9 +22,17 @@
 @property (nonatomic, strong) NSString *author;
 @property (nonatomic, strong) NSString *article;
 @property (nonatomic, strong) NSString *newsTitle;
-@property (nonatomic, strong) NSArray *tags;
+@property (nonatomic, strong) NSArray *hashtags;
 @property (nonatomic, strong) NSNumber *like;
 @property (nonatomic, strong) NSNumber *dislike;
+
+@property (nonatomic, assign) Like userLike;
+
+
+
++ (NSArray *)newsFromResponse:(id)response;
+- (UIImage *)categoryIcon;
+- (NSString *)hashtagsString;
 
 
 @end

@@ -8,9 +8,11 @@
 
 #import <AFNetworking/AFNetworking.h>
 
-@interface WebService : AFHTTPSessionManager
+@interface WebService : NSObject//AFHTTPSessionManager
 
 + (WebService *)sharedInstance;
 + (BOOL)networkReachable;
+
+- (void)getNewsWithCompletion:(RequestCallback)completion;
 
 @end

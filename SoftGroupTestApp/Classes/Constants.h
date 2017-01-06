@@ -12,6 +12,7 @@
 
 
 static NSString * const BaseURL = @"http://beta.json-generator.com/api/json/get/E1wMT-pGM";
+typedef void (^RequestCallback) (ResponseInfo *responseInfo);
 
 
 #endif /* Constants_h */

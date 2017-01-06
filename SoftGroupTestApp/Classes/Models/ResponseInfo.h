@@ -13,11 +13,11 @@
 
 @property (nonatomic, assign) BOOL success;
 @property (nonatomic, strong) NSError *error;
-@property (nonatomic, strong) NSArray *objects;
 @property (nonatomic, strong) id object;
 @property (nonatomic, assign) NSInteger statusCode;
 
 
-+ (ResponseInfo *)responseInfoError:(NSError *)error urlSessionTask:(NSURLSessionDataTask *)task;
++ (ResponseInfo *)responseInfoError:(NSError *)error urlSessionTask:(NSURLSessionTask *)task;
++ (ResponseInfo *)reponseWithObject:(id)object urlSessionTask:(NSURLSessionTask *)task;
 
 @end

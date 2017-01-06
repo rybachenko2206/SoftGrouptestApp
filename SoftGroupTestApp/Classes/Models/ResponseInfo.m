@@ -13,13 +13,22 @@
 
 @implementation ResponseInfo
 
-+ (ResponseInfo *)responseInfoError:(NSError *)error urlSessionTask:(NSURLSessionDataTask *)task {
-    ResponseInfo *response = [[ResponseInfo alloc] init];
++ (ResponseInfo *)responseInfoError:(NSError *)error urlSessionTask:(NSURLSessionTask *)task {
+    ResponseInfo *response = [ResponseInfo new];
     response.success = NO;
     response.error = error;
     NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)task.response;
     response.statusCode = httpResponse.statusCode;
     
+    return response;
+}
+
++ (ResponseInfo *)reponseWithObject:(id)object urlSessionTask:(NSURLSessionTask *)task {
+    ResponseInfo *response = [ResponseInfo new];
+    response.success = YES;
+    response.object = object;
+    NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)task.response;
+    response.statusCode = httpResponse.statusCode;
     return response;
 }
 

@@ -19,6 +19,9 @@
 		42411A461E1E80C7002510DD /* WebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42411A451E1E80C7002510DD /* WebService.m */; };
 		42411A4C1E1E8144002510DD /* NetworkStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42411A491E1E8144002510DD /* NetworkStatusManager.m */; };
 		42411A4D1E1E8144002510DD /* ResponseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 42411A4B1E1E8144002510DD /* ResponseInfo.m */; };
+		42411A521E1EAB74002510DD /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42411A511E1EAB74002510DD /* AlertManager.m */; };
+		42411A551E1EC618002510DD /* NewsDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42411A541E1EC618002510DD /* NewsDetailTableViewController.m */; };
+		42411A591E1FA6DB002510DD /* UIViewController+CustomMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 42411A581E1FA6DB002510DD /* UIViewController+CustomMethods.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,12 @@
 		42411A4B1E1E8144002510DD /* ResponseInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseInfo.m; sourceTree = "<group>"; };
 		42411A4E1E1E81E3002510DD /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		42411A4F1E1E827A002510DD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		42411A501E1EAB74002510DD /* AlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertManager.h; sourceTree = "<group>"; };
+		42411A511E1EAB74002510DD /* AlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertManager.m; sourceTree = "<group>"; };
+		42411A531E1EC618002510DD /* NewsDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailTableViewController.h; sourceTree = "<group>"; };
+		42411A541E1EC618002510DD /* NewsDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailTableViewController.m; sourceTree = "<group>"; };
+		42411A571E1FA6DB002510DD /* UIViewController+CustomMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CustomMethods.h"; sourceTree = "<group>"; };
+		42411A581E1FA6DB002510DD /* UIViewController+CustomMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CustomMethods.m"; sourceTree = "<group>"; };
 		687E4EDF4712AD5D01B9D132 /* Pods_SoftGroupTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoftGroupTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4225B6C244E9222AB495016 /* Pods-SoftGroupTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftGroupTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoftGroupTestApp/Pods-SoftGroupTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +115,7 @@
 				420BA1401E1E656600C1A649 /* AppDelegate.m */,
 				42411A4E1E1E81E3002510DD /* Constants.h */,
 				42411A4F1E1E827A002510DD /* PrefixHeader.pch */,
+				42411A561E1FA66B002510DD /* Categories */,
 				420BA1421E1E656600C1A649 /* Models */,
 				420BA1431E1E656600C1A649 /* Views */,
 				420BA1411E1E656600C1A649 /* Controllers */,
@@ -118,6 +128,8 @@
 			children = (
 				420BA1471E1E71D000C1A649 /* NewsListTableViewController.h */,
 				420BA1481E1E71D000C1A649 /* NewsListTableViewController.m */,
+				42411A531E1EC618002510DD /* NewsDetailTableViewController.h */,
+				42411A541E1EC618002510DD /* NewsDetailTableViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -128,6 +140,8 @@
 				42411A471E1E812D002510DD /* Networking */,
 				421295751E1E7674000DFB65 /* NewsItem.h */,
 				421295761E1E7674000DFB65 /* NewsItem.m */,
+				42411A501E1EAB74002510DD /* AlertManager.h */,
+				42411A511E1EAB74002510DD /* AlertManager.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,6 +191,15 @@
 				42411A4B1E1E8144002510DD /* ResponseInfo.m */,
 			);
 			name = Networking;
+			sourceTree = "<group>";
+		};
+		42411A561E1FA66B002510DD /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				42411A571E1FA6DB002510DD /* UIViewController+CustomMethods.h */,
+				42411A581E1FA6DB002510DD /* UIViewController+CustomMethods.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		4D4FE347EF5095BC8936F475 /* Pods */ = {
@@ -322,8 +345,11 @@
 				42411A461E1E80C7002510DD /* WebService.m in Sources */,
 				42411A4C1E1E8144002510DD /* NetworkStatusManager.m in Sources */,
 				420BA1441E1E656600C1A649 /* AppDelegate.m in Sources */,
+				42411A521E1EAB74002510DD /* AlertManager.m in Sources */,
 				420BA1491E1E71D000C1A649 /* NewsListTableViewController.m in Sources */,
+				42411A551E1EC618002510DD /* NewsDetailTableViewController.m in Sources */,
 				42411A4D1E1E8144002510DD /* ResponseInfo.m in Sources */,
+				42411A591E1FA6DB002510DD /* UIViewController+CustomMethods.m in Sources */,
 				421295741E1E736C000DFB65 /* NewsTableViewCell.m in Sources */,
 				421295771E1E7674000DFB65 /* NewsItem.m in Sources */,
 				420BA1291E1E64B300C1A649 /* main.m in Sources */,

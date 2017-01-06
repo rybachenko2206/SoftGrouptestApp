@@ -6,8 +6,12 @@
 //  Copyright © 2017 Roman Rybachenko. All rights reserved.
 //
 
-#import "AppDelegate.h"
+
 #import "NetworkStatusManager.h"
+#import "SVProgressHUD.h"
+
+#import "AppDelegate.h"
+
 
 @interface AppDelegate ()
 
@@ -18,8 +22,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeGradient];
+    
     self.networkManager = [NetworkStatusManager reachabilityWithHostname:@"www.google.com"];
     [self.networkManager startNotifier];
+    
+    [self availableFontsList];
     
     return YES;
 }
@@ -61,6 +69,16 @@
         NSLog(@"~~Reachable");
     } else {
         NSLog(@"~~Not reachable");
+    }
+}
+
+
+#pragma mark - Private methods
+
+- (void)availableFontsList {
+    for (id familyName in [UIFont familyNames]) {
+        NSLog(@"%@", familyName);
+        for (id fontName in [UIFont fontNamesForFamilyName:familyName]) NSLog(@"  %@", fontName);
     }
 }
 

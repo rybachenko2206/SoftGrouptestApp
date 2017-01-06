@@ -7,8 +7,6 @@
 //
 
 
-#import <SDWebImage/UIImageView+WebCache.h>
-
 #import "NewsTableViewCell.h"
 
 
@@ -36,7 +34,11 @@
 - (void)setItem:(NewsItem *)item {
     _item = item;
     
-    // TODO: write set item
+    self.avatarImageView.image = [_item categoryIcon];
+    self.newsTitleLabel.text = _item.newsTitle;
+    self.newsTextLabel.text = _item.article;
+    [self setAuthor:_item.author];
+    self.hashtagsLabel.text = [_item hashtagsString];
 }
 
 
@@ -45,5 +47,20 @@
 + (NSString *)cellIdentifier {
     return NSStringFromClass(self);
 }
+
+
+#pragma mark - Private methods
+
+- (void)setAuthor:(NSString *)author {
+    NSString *title = @"Author: ";
+    NSString *fullString = [title stringByAppendingString:author];
+    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:fullString];
+    NSRange titleRange = NSMakeRange(0, title.length);
+    UIFont *font = [UIFont fontWithName:@"HelveticaNeue-Light" size:self.authorLabel.font.pointSize];
+    [attrString addAttribute:NSFontAttributeName value:font range:titleRange];
+    
+    self.authorLabel.attributedText = attrString;
+}
+
 
 @end
